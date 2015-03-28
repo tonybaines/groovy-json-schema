@@ -1,0 +1,9 @@
+schema('Example Schema') {
+  name(type:'string', optional: true)
+  telephoneNumbers(type: 'array', minSize: 0) { // e.g. [{'label': 'Home', 'number': '01234 567890'}, {...}]
+    label(type: 'string')
+    number(type: 'string')
+  }
+  sizes(type: 'array', minSize: 1, subtype: 'string') // e.g. ['S', 'M', 'L']
+  address(ref: 'address-schema')
+}
