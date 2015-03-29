@@ -1,0 +1,21 @@
+JSON Schema DSL
+===============
+
+JSON Schema is a useful tool to me, especially when regression testing APIs, but it suffers from some redundancy
+and little tool support.
+
+This is an attempt to make the job of building a schema for validation purposes a little easier.
+
+= Goals
+* To be able to generate valid JSON schemas the cover off my validation use-cases
+** Primitive types (optional/mandatory)
+** Arrays (constrained size)
+** References to other definitions (JSON schema and/or DSL ?)
+
+
+= Features
+* IDE support for completion and highlighting (Intellij IDEA certainly)
+* Validation of the generated schema
+* Build-tool support
+** Gradle
+** Maven (maybe)
